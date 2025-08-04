@@ -1,0 +1,114 @@
+PlayWise System Test Demonstration
+==================================
+
+This file contains a step-by-step guide to test all features of the PlayWise system.
+
+STEP 1: Launch the Program
+--------------------------
+Run: ./playwise.exe (Windows) or ./playwise (Linux/Mac)
+
+STEP 2: Test Playlist Management (Option 1)
+-------------------------------------------
+1. Choose option 1 (Create/Manage Playlist)
+2. Choose option 1 (Add Song)
+3. Enter: "Bohemian Rhapsody" as title
+4. Enter: "Queen" as artist  
+5. Enter: 354 as duration
+6. Choose option 1 again to add another song
+7. Enter: "Hotel California" as title
+8. Enter: "Eagles" as artist
+9. Enter: 391 as duration
+10. Choose option 5 (Display Playlist) to see the songs
+
+STEP 3: Test Playback History (Option 2)
+----------------------------------------
+1. Go back to main menu (option 6)
+2. Choose option 2 (Playback History Operations)
+3. Choose option 1 (Add played song)
+4. Enter: "Stairway to Heaven" as title
+5. Enter: "Led Zeppelin" as artist
+6. Enter: 482 as duration
+7. Choose option 2 (Undo last play)
+8. Choose option 3 (Display history)
+
+STEP 4: Test Song Rating (Option 3)
+-----------------------------------
+1. Go back to main menu
+2. Choose option 3 (Song Rating Management)
+3. Choose option 1 (Add song with rating)
+4. Enter: "Imagine" as title
+5. Enter: "John Lennon" as artist
+6. Enter: 183 as duration
+7. Enter: 5 as rating
+8. Choose option 2 (Search songs by rating)
+9. Enter: 5 to see 5-star songs
+10. Choose option 4 (Display all ratings)
+
+STEP 5: Test Song Lookup (Option 4)
+-----------------------------------
+1. Go back to main menu
+2. Choose option 4 (Song Lookup)
+3. Choose option 1 (Add song to lookup)
+4. Enter: "Hey Jude" as title
+5. Enter: "The Beatles" as artist
+6. Enter: 431 as duration
+7. Choose option 2 (Search by title)
+8. Enter: "Hey Jude" to find the song
+9. Choose option 3 (Search by ID)
+10. Enter: 1 to find the first song
+
+STEP 6: Test Sorting (Option 5)
+--------------------------------
+1. Go back to main menu
+2. Choose option 5 (Sort Playlist)
+3. Choose option 1 (Sort by title) - see alphabetical order
+4. Choose option 2 (Sort by duration ascending)
+5. Choose option 3 (Sort by duration descending)
+6. Choose option 4 (Sort by recently added)
+
+STEP 7: Test System Snapshot (Option 6)
+---------------------------------------
+1. Go back to main menu
+2. Choose option 6 (System Snapshot)
+3. View the comprehensive system statistics
+
+STEP 8: Test Undo Functionality (Option 7)
+------------------------------------------
+1. Go back to main menu
+2. Choose option 7 (Undo Last N Edits)
+3. Enter: 2 to undo the last 2 operations
+
+STEP 9: Test Shuffle with Constraints (Option 8)
+------------------------------------------------
+1. Go back to main menu
+2. Choose option 8 (Shuffle with Constraints)
+3. View the shuffled playlist (no consecutive same artists)
+
+STEP 10: Exit (Option 9)
+-------------------------
+1. Choose option 9 to exit the program
+
+Expected Results:
+----------------
+- All operations should complete successfully
+- No crashes or memory leaks
+- Proper error handling for invalid inputs
+- Fast response times for all operations
+- Consistent data across all components
+
+Performance Benchmarks:
+----------------------
+- Song lookup: < 1 microsecond
+- Playlist operations: < 10 microseconds
+- Sorting operations: < 1 millisecond for small datasets
+- System snapshot: < 100 microseconds
+
+This demonstration showcases all 8 core components of the PlayWise system:
+1. Playlist Engine (Doubly Linked List)
+2. Playback History (Stack)
+3. Song Rating Tree (BST)
+4. Song Lookup (Hash Maps)
+5. Playlist Sorter (Merge/Quick Sort)
+6. System Snapshot (Live Dashboard)
+7. Undo Last N Edits (Command Pattern)
+8. Shuffle with Constraints (Constraint Algorithm) 
