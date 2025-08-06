@@ -50,6 +50,21 @@ A comprehensive C++ implementation of a smart music playlist management system t
    - Constraint-aware shuffling
    - Multiple shuffle attempts if needed
 
+### GUI Features (Optional)
+
+9. **Modern Graphical Interface**
+   - Tabbed interface for organized navigation
+   - Real-time playlist updates and statistics
+   - Interactive charts and analytics
+   - Professional styling with custom CSS
+   - Cross-platform compatibility (Windows, macOS, Linux)
+
+10. **Visual Analytics**
+    - Pie charts for rating distribution
+    - Bar charts for song durations
+    - Live system statistics dashboard
+    - Export functionality for snapshots
+
 ## 🏗️ Architecture
 
 ### Data Structures Used
@@ -80,8 +95,11 @@ A comprehensive C++ implementation of a smart music playlist management system t
 
 - C++17 compatible compiler (GCC 7+, Clang 5+, MSVC 2017+)
 - Make (optional, for build automation)
+- **For GUI**: Qt 5.15+ or 6.0+ (see [GUI Setup Guide](GUI_SETUP_GUIDE.md))
 
 ### Installation
+
+#### Console Version (Recommended for beginners)
 
 1. **Clone the repository**
    ```bash
@@ -102,6 +120,36 @@ A comprehensive C++ implementation of a smart music playlist management system t
    ```bash
    ./playwise
    ```
+
+#### GUI Version (Advanced users)
+
+The PlayWise GUI provides a modern, tabbed interface with real-time updates and visual analytics.
+
+**Prerequisites for GUI:**
+- Qt 5.15+ or 6.0+ (download from https://www.qt.io/download)
+- CMake 3.16+ (optional, for easier building)
+
+**Building the GUI:**
+
+**Using CMake (Recommended):**
+```bash
+mkdir build && cd build
+cmake ..
+cmake --build .
+./playwise_gui
+```
+
+**Using Windows batch script:**
+```bash
+build_gui.bat
+```
+
+**Using Qt Creator IDE:**
+1. Open `CMakeLists.txt` in Qt Creator
+2. Configure project with your Qt kit
+3. Build and run
+
+**For detailed GUI setup instructions, see [GUI Setup Guide](GUI_SETUP_GUIDE.md).**
 
 ### Platform-Specific Instructions
 
