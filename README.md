@@ -303,22 +303,6 @@ The system includes built-in performance measurement:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by modern music streaming platforms
-- Demonstrates real-world application of data structures
-- Educational project for learning advanced C++ concepts
-
-## 📞 Support
-
-For questions or issues:
-- Create an issue in the repository
-- Contact the development team
-- Check the documentation
 
 ---
 
